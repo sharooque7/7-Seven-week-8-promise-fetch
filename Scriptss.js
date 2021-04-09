@@ -58,7 +58,7 @@ function ListOfCountries(Data) {
     function WeatherApi(elem) {
       button.addEventListener("click", function () {
         let ApiKey = "f0bf33e2155f77668d794e50971e38e6";
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${element.name}&appid=${ApiKey}&units=metric`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${element.name}&appid=${ApiKey}&units=metric`;
 
         fetch(url)
           .then((response) => response.json())
